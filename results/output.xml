@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.4 on win32)" generated="2025-10-18T19:52:19.610888" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\user\Desktop\estudos\PIPE\pipe_robot\tests">
+<suite id="s1-s1" name="Login" source="C:\Users\user\Desktop\estudos\PIPE\pipe_robot\tests\login.robot">
+<test id="s1-s1-t1" name="Senha incorreta" line="10">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-18T19:52:19.953617" level="INFO">${soma} = 3</msg>
+<var>${soma}</var>
+<arg>1 + 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-18T19:52:19.953617" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${SOMA} != 3">
+<kw name="Fail" owner="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-10-18T19:52:19.969486" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-10-18T19:52:19.953617" elapsed="0.015869"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-10-18T19:52:19.969486" level="INFO">DEU BOA</msg>
+<arg>DEU BOA</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-10-18T19:52:19.969486" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-10-18T19:52:19.969486" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-10-18T19:52:19.953617" elapsed="0.015869"/>
+</if>
+<status status="PASS" start="2025-10-18T19:52:19.953617" elapsed="0.015869"/>
+</test>
+<doc>Testes de Criação de Clientes</doc>
+<status status="PASS" start="2025-10-18T19:52:19.646974" elapsed="0.429058"/>
+</suite>
+<status status="PASS" start="2025-10-18T19:52:19.613110" elapsed="0.556889"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Login" id="s1-s1" pass="1" fail="0" skip="0">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-18T19:52:20.074786" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: 
+#############################################################
+#                                                           #
+#  RF-Browser dependencies not found in installation path!  #
+#           Run `rfbrowser init` to install.                #
+#                                                           #
+#############################################################
+Installation path: C:\Users\user\Desktop\estudos\PIPE\pipe_robot\.venv\Lib\site-packages\Browser\wrapper</msg>
+<msg time="2025-10-18T19:52:20.169999" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: 
+#############################################################
+#                                                           #
+#  RF-Browser dependencies not found in installation path!  #
+#           Run `rfbrowser init` to install.                #
+#                                                           #
+#############################################################
+Installation path: C:\Users\user\Desktop\estudos\PIPE\pipe_robot\.venv\Lib\site-packages\Browser\wrapper</msg>
+</errors>
+</robot>
