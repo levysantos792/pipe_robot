@@ -29,3 +29,9 @@ jobs:
       - name: Run tests
         run: robot -d results tests/
 
+      - name: Upload Robot Framework results
+        uses: actions/upload-artifact@v3
+        with:
+          name: robot-results       # nome do artefato no GitHub
+          path: results/
+
